@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Arboreal</title>
+  </head>
+  <body>
+    <!--Navigationbar-->
+    <nav>
+      <a href="#aboutUs">About us</a>
+      <a href="#themes">Themes</a>
+      <a href="#home"><img src="blacklogo.png" alt="Arboreal logo" class="blacklogo"></a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contactUs">Contact us</a>
+    </nav>
+    <!--header: image+logo+quote-->
+    <header id="home">
+      <img src="headerimage.jpg" alt="background" class="headerimage">
+      <h3>"A workplace that is a alive create ideas that live on"</h3>
+    </header>
+<!-- Main -->
+    <main>
+      <h1>Welcome to Arboreal</h1>
+    <!--About the company-->
+    <section id="aboutUs" class="aboutUs">
+      <h2>About Us</h2>
+      <p>Arboreal revolutionizes the way you think about plants in an office
+        environment. Arboreal isn't just a delivery service for plants,
+        it's a delivery service for new ideas. Arboreal makes it easy to keep
+        your workplace fresh and oxygenated.</p>
+    </section>
+    <!--the different themes-->
+    <article class="themes" id="themes">
+        <h2>Themes</h2>
+      <div class="themeswrapper">
+        <section class="thethemes">
+          <img src="aloha.jpg" alt="Aloha picture">
+          <h3>Aloha</h3>
+            <p>This rich theme includes exotic coconuts spilling all over the floor
+              combined with palm trees that hang down and are always in the way of
+              your daily workflow. This theme is very complicated, suitable for
+              complex startups with a unclear monetizing strategy.</p>
+        </section>
+
+        <section class="thethemes">
+          <img src="siberia.jpg" alt="Siberia picture">
+          <h3>Siberia</h3>
+            <p>Dead plants everywhere. Plants sprayed with white color to give that
+               cold secluded look.</p>
+        </section>
+
+        <section class="thethemes">
+          <img src="nordic.jpg" alt="Exotic Nordic picture">
+          <h3>Exotique Nørdic</h3>
+            <p>Everything is pine and spruce. Get that Norrlands inland-look in
+              your office. Comes with a Christmas Decoration Extension Pack for
+              the first 100 subscribers (Bears not included).</p>
+        </section>
+      </div>
+    </article>
+
+    <!--Pricing-->
+    <article id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <section class="price">
+          <h3>Standard</h3>
+          <ul>
+            <li>Watering not included	</li>
+            <li>No change of dead plants, monthly plant change</li>
+          </ul>
+        </section>
+        <section class="price">
+          <h3>Premium</h3>
+          <ul>
+            <li>Watering included</li>
+            <li>Exchange of dead plants included, monthly plant change</li>
+          </ul>
+        </section>
+        <section class="price">
+          <h3>Exclusive</h3>
+          <ul>
+            <li>Web-controlled automated watering system included</li>
+            <li>Change of dead plants included, weekly plant exchange</li>
+            <li>Surveillence system for every plant. 24/7 support for emergencies</li>
+            <li>Only locally grown plants. Exotic plants flown in by private jet</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+    <!--contact form-->
+    <article id="contactUs" class="contactUs">
+      <h2>Contact us</h2>
+      <form>
+        <div>
+          <label>Name</label>
+          <br><input type="text" name="name"><br/>
+          <label>Company</label>
+          <br><input type="text" name="company"><br/>
+          <label>E-mail</label>
+          <br><input type="text" name="E-mail"><br/>
+          <label>Phone number</label>
+          <br><input type="tel" name="phonenumber"><br/>
+         </div>
+         <div>
+           <label>Message</label>
+           <br><textarea rows="10" cols="50"></textarea><br/>
+           <div class="send">
+             <br><label>I prefer to be contacted via:</label><br/>
+             <input type="radio" name="email" value="email">E-Mail
+             <input type="radio" name="phone" value="phone">Phone
+           </div>
+           <div class="send">
+             <button name="message" onclick="alert('Thank you! We will be in touch shortly.')">Send</button>
+           </div>
+         </div>
+      </form>
+    </article>
+  <!--Footer with contact information-->
+</main>
+    <footer>
+    <div class="contactinfo">
+      <h4>Contact information:</h4>
+          <p>Birger Jarlsgatan 12
+          <p>Stockholm</p>
+          <p>Tel: 08-56 57 30</p>
+    </div>
+    <div class="contactinfo">
+      <img src="whitelogo.png" alt="Arboreal logo">
+    </div>
+    <div class="contactinfo">
+      <div class="socialmedia">
+        <img src="facebook_icon.png" alt="facebook icon" class="facebook"> Arboreal
+      </div>
+      <div class="socialmedia">
+        <img src="twitter_icon.png" alt="twitter icon" class="twitter"> @arboreal
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>
