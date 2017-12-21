@@ -2,22 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="script.js" defer></script>
     <title>Arboreal</title>
   </head>
   <body>
     <!--Navigationbar-->
     <nav>
-      <a href="#aboutUs">About us</a>
-      <a href="#themes">Themes</a>
-      <a href="#home"><img src="blacklogo.png" alt="Arboreal logo" class="blacklogo"></a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contactUs">Contact us</a>
+      <div class="navDesktop">
+        <a href="#aboutUs">About us</a>
+        <a href="#themes">Themes</a>
+        <a href="#home"><img src="blacklogo.png" alt="Arboreal logo" class="blacklogo"></a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contactUs">Contact us</a>
+      </div>
+
+      <div class="navMobile">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="mobileMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutUs">About us</a></li>
+          <li><a href="#themes">Themes</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contactUs">Contact us</a></li>
+        </ul>
+      </div>
     </nav>
+
     <!--header: image+logo+quote-->
     <header id="home">
       <img src="headerimage.jpg" alt="background" class="headerimage">
-      <h3>"A workplace that is a alive create ideas that live on"</h3>
+      <p>A workplace that is a alive create ideas that live on</p>
     </header>
 <!-- Main -->
     <main>
@@ -93,26 +112,26 @@
     <article id="contactUs" class="contactUs">
       <h2>Contact us</h2>
       <form>
-        <div>
-          <label>Name</label>
-          <br><input type="text" name="name"><br/>
-          <label>Company</label>
-          <br><input type="text" name="company"><br/>
-          <label>E-mail</label>
-          <br><input type="text" name="E-mail"><br/>
-          <label>Phone number</label>
-          <br><input type="tel" name="phonenumber"><br/>
+        <div class="inputinformation">
+          <label for="name">Name</label>
+          <br><input type="text" name="name" id="name"><br/>
+          <label for="company">Company</label>
+          <br><input type="text" name="company" id="company"><br/>
+          <label for="inputemail">E-mail</label>
+          <br><input type="text" name="inputemail" id="inputemail"><br/>
+          <label for="phonenumber">Phone number</label>
+          <br><input type="tel" name="phonenumber" id="phonenumber"><br/>
          </div>
-         <div>
-           <label>Message</label>
-           <br><textarea rows="10" cols="50"></textarea><br/>
+         <div class="messagecontent">
+           <label for="message">Message</label>
+           <br><textarea rows="10" cols="50" name="message" id="message"></textarea><br/>
            <div class="send">
              <br><label>I prefer to be contacted via:</label><br/>
-             <input type="radio" name="email" value="email">E-Mail
-             <input type="radio" name="phone" value="phone">Phone
+             <input type="radio" name="email" value="email" id="email">E-Mail
+             <input type="radio" name="phone" value="phone" id="phone">Phone
            </div>
            <div class="send">
-             <button name="message" onclick="alert('Thank you! We will be in touch shortly.')">Send</button>
+              <input type="submit" name="submit" value="Send" class="submit" onclick="alert('Thank you! We will be in touch shortly.')">
            </div>
          </div>
       </form>
@@ -121,13 +140,13 @@
 </main>
     <footer>
     <div class="contactinfo">
-      <h4>Contact information:</h4>
+      <h3>Contact information:</h3>
           <p>Birger Jarlsgatan 12
           <p>Stockholm</p>
-          <p>Tel: 08-56 57 30</p>
+          <a href="tel:+468565730">Tel: 08-56 57 30</a>
     </div>
     <div class="contactinfo">
-      <img src="whitelogo.png" alt="Arboreal logo">
+      <img src="whitelogo.png" alt="Arboreal logo" class="logofooter">
     </div>
     <div class="contactinfo">
       <div class="socialmedia">
