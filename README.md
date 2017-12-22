@@ -8,6 +8,15 @@ Uppgift:
 
 https://github.com/fend17/html-css/blob/master/examination/individuell_examination_1.md
 
+Kommentar från Ellinor:
+Media queries - För 800px eftersom det är där och under som menyn blir för liten. Eftersom allt lägger sig under varandra så passar det bra för alla lägre upplösningar.
+Responsivt mönster - Columns flow. Det är lite information så vi vill inte ha en mening text i en lång rad
+bara. Det blir lättare att läsa om vi får en liten kolumn att läsa. Sen ser det nästan likadant ut på mobil när divarna hamnar under varandra istället.
+Feature queries - finns inget som behöver ha det. Finns fallbacks för ställen där em eller flex används.
+
+
+
+
 Feedback från Fredrik Bruér 2017-12-11:
 positivt:
 - Bra struktur med korrekt indentering i HTMLen
@@ -15,12 +24,12 @@ positivt:
 - Sidan är i stort sett responsiv
 - Fina och passande bilder som livar upp sidan
 - Intressant och snyggt val av hur de olika prisalternativen presenteras i en mer unik stil
-  istället för i ett vanligt table-format (lite mer padding i boxarna med punkterna skulle dock inte skada!!)
-- Stilpoäng för lite javascript när man trycker på "send"-knappen
+  istället för i ett vanligt table-format (lite mer padding i boxarna med punkterna skulle dock inte skada!!) //Fixat
+- Stilpoäng för lite javascript när man trycker på "send"-knappen //not really
 allmänt:
 - När man trycker på länkarna i navigationen hamnar man inte alltid på en position där man kan se aktuell rubrik, vilket kan vara lite förvirrande för användaren.//Fixat
-- Mer padding på en del av sidans element skulle kunna behövas - t.ex. i övre delen av footern
-- Större radavstånd i textstyckena skulle kunna göra sidan lite mer luftig och lättläst
+- Mer padding på en del av sidans element skulle kunna behövas - t.ex. i övre delen av footern//Fixat
+- Större radavstånd i textstyckena skulle kunna göra sidan lite mer luftig och lättläst//Fixat
 
 html:
 - Label-elemeten är inte kopplade till input-elementen i formuläret (genom id-attribut)//Fixat
