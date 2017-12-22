@@ -77,6 +77,7 @@ h3{
   flex-wrap: wrap;
 }
 .thethemes{
+  float: left;   /*Så att Internet Explorer blir nöjd*/
   width: 30%;
   margin-left: 1%;
   margin-right: 1%;
@@ -201,8 +202,8 @@ footer{
   top: -5px;
   left: -5px;
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 /*The Burger */
