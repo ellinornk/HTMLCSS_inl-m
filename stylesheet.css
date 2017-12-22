@@ -1,7 +1,12 @@
+ /*Same font on everything*/
 *{
   font-family: Calibri;
   color: #3d3d3d
-  } /*Same font on everything*/
+}
+  /*Clearfix*/
+.clearfix {
+      clear: left;
+}
 p{
   font: 100% 1;
 }
@@ -77,6 +82,7 @@ h3{
   flex-wrap: wrap;
 }
 .thethemes{
+  display: block;
   float: left;   /*Så att Internet Explorer blir nöjd*/
   width: 30%;
   margin-left: 1%;
@@ -95,6 +101,8 @@ h3{
   flex-wrap: wrap;
 }
 .price{
+  display: block;
+  float: left;   /*Så att Internet Explorer blir nöjd*/
   width: 30%;
   margin:1%;
   background-color: lightgray;
