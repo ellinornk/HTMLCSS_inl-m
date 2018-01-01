@@ -90,8 +90,11 @@ h3{
  display: block;
  float: left;   /*Så att Internet Explorer blir nöjd*/
  width: 30%;
+ width: 25em;
  margin-left: 1%;
+ margin-left: 2em;
  margin-right: 1%;
+ margin-right: 2em;
 }
 .thethemes img{
  width: 100%;
@@ -117,7 +120,9 @@ h3{
  display: block;
  float: left;   /*Så att Internet Explorer blir nöjd*/
  width: 30%;
- margin:1%;
+ width: 25em;
+ margin: 1%;
+ margin: 2em;
  background-color: lightgray;
  border-radius: 25px;
 }
@@ -204,7 +209,17 @@ padding-bottom: 2%;
  vertical-align: middle;
 }
 
-/*Media query for tablet*/
+/*Media query för små skärmar/ipad pro*/
+@media only screen and (max-width: 1080px)
+
+.thethemes img{
+
+}
+.thethemes h3{
+
+}
+
+/*Media query för tablet och mobil*/
 /*Valde 800 eftersom det är lite över en vanlig ipad och det är här meny mm börjar bli galet*/
 
 @media only screen and (max-width: 800px) {
