@@ -43,7 +43,7 @@ nav a{
 }
 h2{
  text-align: center;
- margin-top: 10%;
+ margin: 10% 0 5% 0;
 }
 
 main{
@@ -56,8 +56,7 @@ h1{
 .slogan{
  text-align: center;
  font-style: italic;
- font-size: 20px; /*för IE*/
- font-size: 1.5em;
+ font-size: 150%;
 }
 h3{
  text-align: center;
@@ -66,9 +65,7 @@ h3{
 /*About Us*/
 .aboutUs {
  text-align: center;
- margin-top: 10%;
- margin-left: 10%;
- margin-right: 10%;
+ margin: 10% 10% 0 10%;
 }
 
 /*Themes*/
@@ -88,13 +85,10 @@ h3{
 }
 .thethemes{
  display: block;
- float: left;   /*Så att Internet Explorer blir nöjd*/
- width: 30%;
- width: 25em;
- margin-left: 1%;
- margin-left: 2em;
- margin-right: 1%;
- margin-right: 2em;
+ float: left;   /*For the oldies*/
+ width: 300px;
+ width: 20em;
+ margin: 0 1% 0 1%;
 }
 .thethemes img{
  width: 100%;
@@ -118,14 +112,14 @@ h3{
 }
 .price{
  display: block;
- float: left;   /*Så att Internet Explorer blir nöjd*/
- width: 30%;
- width: 25em;
+ float: left;   /*For the oldies*/
+ width: 300px;
+ width: 20em;
  margin: 1%;
- margin: 2em;
- background-color: lightgray;
+ background-color: lightgray; /*the gray frame*/
  border-radius: 25px;
 }
+/*the lists dots*/
 .price ul{
  list-style-type: circle;
  background-color: white;
@@ -134,7 +128,7 @@ h3{
  font-weight: bold;
 }
 .price li{
- margin-top: 3%;
+ margin: 2% 0 0 0;
  line-height: 150%;
 }
 
@@ -154,14 +148,13 @@ h3{
      flex-wrap: wrap;
 }
 .contactUs div{
- margin-left: 2%;
- margin-right: 2%;
+ margin: 0 2% 0 2%;
 }
 .submit{
  float: right;
 }
 .inputinformation input{
- width: 200px;/*för IE*/
+ width: 200px;/*for the oldies*/
  width: 15em;
 }
 
@@ -193,7 +186,7 @@ padding-bottom: 2%;
  text-align: center;
 }
 .contactinfo img{
- height: 20%; /*för IE*/
+ height: 20%; /*for the oldies*/
  height: 5em;
  width: auto;
 }
@@ -207,16 +200,6 @@ padding-bottom: 2%;
  width: 10%;
  height: auto;
  vertical-align: middle;
-}
-
-/*Media query för små skärmar/ipad pro*/
-@media only screen and (max-width: 1080px)
-
-.thethemes img{
-
-}
-.thethemes h3{
-
 }
 
 /*Media query för tablet och mobil*/
