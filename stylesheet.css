@@ -1,7 +1,7 @@
 /*Same font on everything*/
 *{
  font-family: Calibri;
- color: #3d3d3d
+ color: rgb(61,61,61);
 }
  /*Clearfix*/
 .clearfix {
@@ -25,7 +25,6 @@ p{
  font-weight: bold;
 }
 nav a{
- color: #3d3d3d;
  text-decoration: none;
  padding: 2%;
 }
@@ -38,6 +37,7 @@ nav a{
  height:auto;
 }
 .blacklogo{
+ width: 45px; /*for the oldies*/
  width: 3em;
  height: auto;
 }
@@ -116,19 +116,21 @@ h3{
  width: 300px;
  width: 20em;
  margin: 1%;
- background-color: lightgray; /*the gray frame*/
- border-radius: 25px;
+ border-style: solid;
+ border-color: rgb(211,211,211);
+ border-width: 1px;
 }
-/*the lists dots*/
+/*the lists' dots*/
 .price ul{
  list-style-type: circle;
  background-color: white;
 }
 .price h3{
  font-weight: bold;
+ background-color: rgb(211,211,211);
 }
 .price li{
- margin: 2% 0 0 0;
+ margin: 2%;
  line-height: 150%;
 }
 
@@ -150,6 +152,10 @@ h3{
 .contactUs div{
  margin: 0 2% 0 2%;
 }
+.contactUs button{
+  justify-content: center;
+
+}
 .submit{
  float: right;
 }
@@ -162,7 +168,7 @@ h3{
 footer{
 padding-top: 2%;
 padding-bottom: 2%;
- background-color: lightgray;
+ background-color: rgb(211,211,211);
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
@@ -202,9 +208,8 @@ padding-bottom: 2%;
  vertical-align: middle;
 }
 
-/*Media query för tablet och mobil*/
-/*Valde 800 eftersom det är lite över en vanlig ipad och det är här meny mm börjar bli galet*/
-
+/*Media query for tablet and mobile*/
+/*At 800px everything needed a little tweak*/
 @media only screen and (max-width: 800px) {
 
  .thethemes{
@@ -251,7 +256,7 @@ padding-bottom: 2%;
  height: 4px;
  margin-bottom: 5px;
  position: relative;
- background: lightgray;
+ background: rgb(211,211,211);
  border-radius: 3px;
  z-index: 1;
  -webkit-transform-origin: 4px 0px;
@@ -290,7 +295,7 @@ padding-bottom: 2%;
  -webkit-transform: rotate(45deg) translate(-2px, -1px);
      -ms-transform: rotate(45deg) translate(-2px, -1px);
          transform: rotate(45deg) translate(-2px, -1px);
- background: #232323;
+ background: rgb(35,35,35);
 }
 .navMobile input:checked ~ span:nth-last-child(3){
  opacity: 0;
