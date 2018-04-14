@@ -1,6 +1,6 @@
 /*Same font on everything*/
 *{
- font-family: Calibri;
+ font-family: helvetica;
  color: rgb(61,61,61);
 }
  /*Clearfix*/
@@ -11,7 +11,7 @@ p{
  font: 100% 1;
  line-height: 150%;
 }
-/* Navigationbar */
+/* Navigation bar */
 .navDesktop{
  background-color: white;
  position: fixed;
@@ -115,24 +115,48 @@ h3{
  float: left;   /*For the oldies*/
  width: 300px;
  width: 20em;
- margin: 1%;
- border-style: solid;
- border-color: rgb(211,211,211);
+ margin: 2%;
+ background-color: rgb(33, 124, 37);
+ border-radius: 3px;
+ border-left: solid;
+ border-right: solid;
  border-width: 1px;
-}
-/*the lists' dots*/
-.price ul{
- list-style-type: circle;
- background-color: white;
+ border-color:  rgb(33, 124, 37);
 }
 .price h3{
  font-weight: bold;
- background-color: rgb(211,211,211);
+ color: white;
+ /*background-color: rgb(211,211,211);*/
+}
+.pricingList{
+  height: 70%;
+  background-color: white;
+}
+.price ul{
+ list-style: none;
+ background-color: white;
 }
 .price li{
  margin: 2%;
  line-height: 150%;
 }
+.price button{
+  width: 100%;
+  bottom: 0;
+  height: 34px;
+  height: 3em;
+  background-color: rgb(33, 124, 37);
+  border: none;
+}
+.price button:hover a{
+  font-weight: bold;
+}
+.price a{
+  text-decoration: none;
+  color: white;
+  font-size: 130%;
+}
+
 
 /*Contact Form*/
 .contactUs form{
@@ -152,12 +176,15 @@ h3{
 .contactUs div{
  margin: 0 2% 0 2%;
 }
-.contactUs button{
-  justify-content: center;
-
-}
 .submit{
  float: right;
+ background-color: rgb(33, 124, 37);
+ text-decoration: none;
+ color:white;
+ border-radius: 4px;
+ height: 2.5em;
+ width: 4.5em;
+ font-size: 95%;
 }
 .inputinformation input{
  width: 200px;/*for the oldies*/
